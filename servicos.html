@@ -5,10 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços de Estética</title>
     <link rel="stylesheet" href="servicos.css">
+    <script src="servicos.js" defer></script> <!-- Importando o arquivo JS -->
+    <style>
+        /* Estilizando a área dos botões */
+        .botoes {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 40px; /* Adiciona espaçamento entre os botões e a borda inferior da tela */
+        }
+
+        .botoes button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #014A8E;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .botoes button:hover {
+            background-color: #013766;
+        }
+
+        .botoes #total {
+            font-size: 18px;
+            font-weight: bold;
+            color: #014A8E;
+        }
+
+        /* Espaço em volta dos botões */
+        .proximo, .voltar {
+            margin-right: 10px;
+        }
+
+        /* Centralizar e ajustar o layout dos botões no mobile */
+        @media (max-width: 600px) {
+            .botoes {
+                flex-direction: column;
+            }
+            .proximo, .voltar {
+                width: 100%;
+                margin: 10px 0;
+            }
+            #total {
+                margin-top: 10px;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
-<body background-image ="imagens/tela de fundo.png">
+<body background-image="imagens/tela de fundo.png">
     <div class="container">
-       
         <div class="logo-sb">
             <img src="imagens/logo senac beauty.png" alt="Logo SB">
         </div>
@@ -18,32 +69,37 @@
 
         <section class="servicos">
             <h1>ESTÉTICA</h1>
-            <h2 style="color: #014A8E ;">Serviços</h2>
+            <h2 style="color: #014A8E;">Serviços</h2>
 
             <div class="servicos-lista">
                 <ul>
-                    <li><input type="checkbox"> Argiloterapia + Hidratação Corporal <span>R$ 65,00</span></li>
-                    <li><input type="checkbox"> Banho de Lua <span>R$ 85,00</span></li>
-                    <li><input type="checkbox"> Corrente Russa (por área) <span>R$ 46,00</span></li>
-                    <li><input type="checkbox"> Criolipólise com contraste (1 área por sessão) <span>R$ 150,00</span></li>
-                    <li><input type="checkbox"> Criolipólise com contraste (2 áreas por sessão) <span>R$ 250,00</span></li>
-                    <li><input type="checkbox"> Drenagem linfática corporal manual (por área) <span>R$ 65,00</span></li>
-                    <li><input type="checkbox"> Drenagem linfática corporal pós-cirúrgica (por área) <span>R$ 70,00</span></li>
-                    <li><input type="checkbox"> Drenagem linfática facial <span>R$ 40,00</span></li>
-                    <li><input type="checkbox"> Esfoliação + Hidratação Corporal <span>R$ 60,00</span></li>
-                    <li><input type="checkbox"> Harmonização Corporal com HECCUS (por área) <span>R$ 70,00</span></li>
-                    <li><input type="checkbox"> Hidratação Facial com Eletroterapia <span>R$ 55,00</span></li>
-                    <li><input type="checkbox"> Limpeza de Pele <span>R$ 85,00</span></li>
-                    <li><input type="checkbox"> Lift Facial com Rádio Frequência <span>R$ 75,00</span></li>
-                    <li><input type="checkbox"> Massagem Modeladora Localizada (por área) <span>R$ 66,00</span></li>
+                    <li><input type="checkbox" data-preco="65"> Argiloterapia + Hidratação Corporal <span>R$ 65,00</span></li>
+                    <li><input type="checkbox" data-preco="85"> Banho de Lua <span>R$ 85,00</span></li>
+                    <li><input type="checkbox" data-preco="46"> Corrente Russa (por área) <span>R$ 46,00</span></li>
+                    <li><input type="checkbox" data-preco="150"> Criolipólise com contraste (1 área por sessão) <span>R$ 150,00</span></li>
+                    <li><input type="checkbox" data-preco="250"> Criolipólise com contraste (2 áreas por sessão) <span>R$ 250,00</span></li>
+                    <li><input type="checkbox" data-preco="65"> Drenagem linfática corporal manual (por área) <span>R$ 65,00</span></li>
+                    <li><input type="checkbox" data-preco="70"> Drenagem linfática corporal pós-cirúrgica (por área) <span>R$ 70,00</span></li>
+                    <li><input type="checkbox" data-preco="40"> Drenagem linfática facial <span>R$ 40,00</span></li>
+                    <li><input type="checkbox" data-preco="60"> Esfoliação + Hidratação Corporal <span>R$ 60,00</span></li>
+                    <li><input type="checkbox" data-preco="70"> Harmonização Corporal com HECCUS (por área) <span>R$ 70,00</span></li>
+                    <li><input type="checkbox" data-preco="55"> Hidratação Facial com Eletroterapia <span>R$ 55,00</span></li>
+                    <li><input type="checkbox" data-preco="85"> Limpeza de Pele <span>R$ 85,00</span></li>
+                    <li><input type="checkbox" data-preco="75"> Lift Facial com Rádio Frequência <span>R$ 75,00</span></li>
+                    <li><input type="checkbox" data-preco="66"> Massagem Modeladora Localizada (por área) <span>R$ 66,00</span></li>
                 </ul>
             </div>
         </section>
 
+        <!-- Botões "Voltar" e "Próximo" com o somatório ao lado -->
         <div class="botoes">
-            <button class="voltar">Voltar</button>
+            <button class="voltar" onclick="history.back()">Voltar</button>
+            <span id="total">Total: R$ 0,00</span> <!-- Exibe o total -->
             <button class="proximo">Próximo</button>
         </div>
+        
+    
+        <div id="mensagemErro" style="color: red; display: none;">Por favor, selecione pelo menos um serviço!</div> <!-- Mensagem de erro -->
     </div>
 </body>
 </html>

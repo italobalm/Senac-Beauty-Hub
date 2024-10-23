@@ -20,7 +20,6 @@ body {
   position: relative;
 }
 
-
 .logo-beauty-hub {
   position: absolute;
   top: 10px;
@@ -32,7 +31,6 @@ body {
   width: 200px; 
   height: auto;
 }
-
 
 .girls {
   position: absolute;
@@ -46,7 +44,6 @@ body {
   height: auto;
 }
 
-
 .senac-logo {
   position: absolute;
   top: 40px;
@@ -57,54 +54,46 @@ body {
 .senac-logo img {
   width: 150px; 
   height: auto;
-  
 }
-
-
-  
 
 body {
-  background-image: url("imagens/tela de fundo.png")
+  background-image: url("imagens/tela de fundo.png");
 }
 
-h1{position: absolute; /* Impede o texto de interferir nas imagens */
+h1 {
+  position: absolute; 
   top: 50%;
   left: 70%;
-  transform: translate(-50%, -50%); /* Centraliza o texto na página */
-  z-index: 3; /* Texto acima de todos os outros elementos */
+  transform: translate(-50%, -50%);
+  z-index: 3; 
   font-size: 55px;
-  text-align: right
-  color, black;
+  text-align: right;
+  color: black; /* Corrigido: cor foi alterada para black */
   padding-right: 0%;
-}
-body {
-  margin: 0;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  position: relative; /* Para que os filhos com position absolute se posicionem em relação a este elemento */
 }
 
 .button-container {
   position: absolute;
   top: 70%;
   left: 70%;
-  transform: translate(-50%, -50%);
+  transform: translate(-30%, -50%);
   z-index: 3;
   display: flex;
-  flex-direction: rows; /* Alinha os botões e o link em uma coluna */
-  align-items: center;
-  gap: 20px; /* Espaço entre os botões e o link */
+  flex-direction: row; /* Botões lado a lado */
+  align-items: center; /* Alinha verticalmente */
+  gap: 20px; /* Espaço entre os botões */
 }
 
 .button {
   background-color: #FF7A00; /* Cor laranja para o botão agendar */
   color: white;
   border: none;
-  padding: 15px 30px;
+  padding: 15px; /* Removido padding lateral */
   font-size: 18px;
   border-radius: 25px;
   cursor: pointer;
   font-family: 'Commissioner', sans-serif;
+  width: 200px; /* Definindo uma largura fixa para todos os botões */
 }
 
 .button.conta {
@@ -117,19 +106,23 @@ body {
   opacity: 0.9;
 }
 
-/* Estilizando o link "ou cadastre-se" */
 .cadastre-se {
   text-decoration: none;
   color: #FF7A00;
   font-size: 16px;
-  margin-top: 5px; /* Espaço entre o botão "Acessar minha conta" e o link */
 }
 
 .cadastre-se:hover {
   text-decoration: underline;
 }
-.button-with-link{
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Espaço entre o botão e o link */
+
+.button-with-link {
+  display: flex; /* Usa flexbox para alinhar o botão e o link */
+  flex-direction: column; /* Alinha o botão e o link em coluna */
+  align-items: center; /* Centraliza o conteúdo dentro da div */
+}
+
+h1 {
+  text-align: left;
+  font-size: 33px !important;
 }

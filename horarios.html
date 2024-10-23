@@ -5,6 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horários de Atendimento</title>
     <link rel="stylesheet" href="horarios.css">
+    <style>
+        /* Estilizando a área dos botões */
+        .botoes {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 40px; /* Adiciona espaçamento entre os botões e a borda inferior da tela */
+        }
+
+        .botoes button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #014A8E;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .botoes button:hover {
+            background-color: #013766;
+        }
+
+        /* Estilo para o título */
+        h1 {
+            margin-top: 20px; /* Adiciona espaço acima do título */
+        }
+
+        /* Estilo da lista de horários */
+        .horarios-lista {
+            margin-top: 20px;
+        }
+
+        .horarios-lista ul {
+            list-style-type: none; /* Remove a marcação padrão da lista */
+            padding: 0; /* Remove o padding da lista */
+        }
+
+        .horarios-lista li {
+            margin: 10px 0; /* Adiciona espaço entre os itens da lista */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -36,10 +80,9 @@
         </section>
 
         <div class="botoes">
-            <button class="voltar">Voltar</button>
-            <button class="proximo">Próximo</button>
+            <button class="voltar" onclick="window.location.href='dias.html'">Voltar</button>
+            <button class="proximo" onclick="window.location.href='profissionais.html'">Próximo</button>
         </div>
     </div>
 </body>
 </html>
-

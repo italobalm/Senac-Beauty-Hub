@@ -5,6 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selecione um Dia</title>
     <link rel="stylesheet" href="dias.css">
+    <script src="dias.js" defer></script> <!-- Importando o arquivo JS -->
+    <style>
+        /* Estilizando a área dos botões */
+        .botoes {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 40px; /* Adiciona espaçamento entre os botões e a borda inferior da tela */
+        }
+
+        .botoes button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #014A8E;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .botoes button:hover {
+            background-color: #013766;
+        }
+
+        /* Estilo dos dias no calendário */
+        .calendario {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .dia {
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .dia-selecionado {
+            background-color: #014A8E;
+            color: white;
+        }
+
+        .botoes .proximo {
+            margin-left: 10px;
+        }
+
+        /* Centralizar e ajustar o layout dos botões no mobile */
+        @media (max-width: 600px) {
+            .botoes {
+                flex-direction: column;
+            }
+            .proximo, .voltar {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+        /* Estilo para o título */
+        h1 {
+            margin-top: 20px; /* Adiciona espaço acima do título */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -15,10 +82,10 @@
             <img src="imagens/logo senac.png" alt="Logo Senac">
         </div>
 
-        <section class="dias">
-            <h1>HORÁRIOS</h1>
-            <h2 style="color: #014A8E;">Selecione um dia do mês de Novembro</h2>
+        <h1>HORÁRIOS</h1> <!-- Título movido para ficar abaixo das logos -->
+        <h2 style="color: #014A8E;">Selecione um dia</h2>
 
+        <section class="dias">
             <div class="calendario">
                 <div class="dia-semana">D</div>
                 <div class="dia-semana">S</div>
@@ -64,10 +131,47 @@
             </div>
         </section>
 
+        <!-- Botões "Voltar" e "Próximo" com mensagem de erro -->
         <div class="botoes">
-            <button class="voltar">Voltar</button>
+            <button class="voltar" onclick="window.location.href='servicos.html'">Voltar</button>
             <button class="proximo">Próximo</button>
         </div>
+        
+        <div id="mensagemErro" style="color: red; display: none;">Por favor, selecione um dia!</div> <!-- Mensagem de erro -->
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dias = document.querySelectorAll('.dia');
+            const botaoProximo = document.querySelector('.proximo');
+            const mensagemErro = document.getElementById('mensagemErro');
+            let diaSelecionado = null;
+
+            // Adicionar evento de clique para cada dia
+            dias.forEach(dia => {
+                dia.addEventListener('click', () => {
+                    if (dia.classList.contains('vazio')) return; // Ignorar dias vazios
+                    // Desmarcar o dia anterior selecionado
+                    if (diaSelecionado) {
+                        diaSelecionado.classList.remove('dia-selecionado');
+                    }
+                    // Selecionar o novo dia
+                    diaSelecionado = dia;
+                    dia.classList.add('dia-selecionado');
+                    mensagemErro.style.display = 'none'; // Esconde a mensagem de erro
+                });
+            });
+
+            // Verificar se um dia foi selecionado ao clicar em "Próximo"
+            botaoProximo.addEventListener('click', (event) => {
+                if (!diaSelecionado) {
+                    event.preventDefault(); // Impede o avanço
+                    mensagemErro.style.display = 'block'; // Exibe a mensagem de erro
+                } else {
+                    window.location.href = 'horarios.html'; // Avança para a próxima página
+                }
+            });
+        });
+    </script>
 </body>
 </html>

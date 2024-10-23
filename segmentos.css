@@ -18,17 +18,17 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Mantém as logos nas extremidades */
   padding: 20px;
 }
 
 .logo-esquerda {
-  width: 150px;
+  width: 150px; /* Define a largura da logo do Senac Beauty */
 }
 
 .logo-direita {
-  width: 150px;
-  height: 100px
+  width: auto; 
+  height: 78px;/* Define a largura da logo do Senac */
 }
 
 h1 {

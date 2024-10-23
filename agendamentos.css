@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-image: url(imagens/tela\ de\ fundo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.logo-sb {
+    position: absolute;
+    top: 20px;
+    left: 68px;
+}
+
+.logo-senac {
+    position: absolute;
+    top: 60px;
+    right: 68px;
+}
+
+.logo-sb img {
+    height: 180px;  
+    width: auto;    
+}
+
+.logo-senac img {
+    height: 78px;  
+    width: auto;    
+}
+
+.agendamento {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    text-align: left;
+}
+
+.agendamento h1 {
+    font-size: 24px;
+    color: #333;
+    position: relative;
+    top: -80px;
+    left: -60px;
+}
+
+.linha, .retangulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha verticalmente */
+    margin: 20px 0;
+    font-weight: bold; /* Torna o texto em negrito */
+}
+
+.linha span, .retangulo span {
+    flex: 1; /* Faz cada item ocupar a mesma largura */
+    text-align: center; /* Centraliza o texto */
+}
+
+.detalhes {
+    margin: 20px 0;
+}
+
+.retangulo {
+    background-color: #014A8E;
+    padding: 30px;
+    border-radius: 8px;
+    color: white; /* para texto */
+}
+
+.feedback {
+    text-align: right;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.Feedback-link {
+    text-decoration: underline; /* Adiciona o sublinhado */
+    cursor: pointer; /* Para indicar que é interativo */
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 100px;
+    top: 100px;
+    position: relative;
+}
+
+.botoes .voltar, .botoes .proximo {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    background-color: #CD722B;
+}
+
+.botoes .voltar:hover, .botoes .proximo:hover {
+    background-color: #CD722B;
+}

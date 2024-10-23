@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-image: url(imagens/tela\ de\ fundo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.logo-sb {
+    position: absolute;
+    top: 20px;
+    left: 68px;
+}
+
+.logo-senac {
+    position: absolute;
+    top: 60px;
+    right: 68px;
+}
+
+.logo-sb img {
+    height: 180px;  
+    width: auto;    
+}
+
+.logo-senac img {
+    height: 78px;  
+    width: auto;    
+}
+
+.profissionais {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    text-align: left;
+}
+
+.profissionais h1 {
+    font-size: 24px;
+    color: #333;
+    margin-left: -95px; /* Ajuste este valor para mover o título mais para a direita */
+}
+
+.profissionais h2 {
+    font-size: 18px;
+    color: #666;
+    margin-right: 5px; /* Reduzido para aproximar os títulos */
+    margin-left: -95px; /* Ajuste este valor para mover o subtítulo mais para a direita */
+}
+
+
+.lista-profissionais {
+    margin: 20px 0;
+}
+
+.lista-profissionais label {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.selecionar-profissional {
+    margin-right: 10px; 
+    cursor: pointer;
+}
+
+.Atendimento {
+    font-weight: bold; /* Define o texto como negrito */
+    color: #014A8E; /* Se quiser manter a cor azul */
+    margin: 20px 0; /* Ajuste a margem conforme necessário */
+}
+
+.estudante {
+    margin: 20px 0;
+}
+
+.feedbacks {
+    margin-top: 40px;
+}
+
+.feedback {
+    background-color: #f0f0f0;
+    padding: 10px; /* Mantido para o conteúdo */
+    border-radius: 8px;
+    margin: 10px auto; /* Ajuste aqui para manter os retângulos próximos */
+    max-width: 600px; /* Ajuste essa largura máxima conforme necessário */
+    width: 100%; /* Para garantir que ocupe toda a largura até o máximo */
+}
+
+.feedback + .feedback {
+    margin-top: 20px; /* Aumente a margem entre os retângulos se necessário */
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 100px;
+}
+
+.botoes .voltar, .botoes .proximo {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    background-color: #CD722B;
+}
+
+.botoes .voltar:hover, .botoes .proximo:hover {
+    background-color: #CD722B;
+}

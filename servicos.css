@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-image: url(imagens/tela\ de\ fundo.png);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.logo-sb {
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.logo-senac {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.logo-sb img{
+    height: 120px;  
+    width: auto;    
+}
+
+
+.logo-senac img {
+    height: 70px;  
+    width: auto;    
+}
+
+.servicos {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    text-align: left;
+}
+
+.servicos h1 {
+    font-size: 24px;
+    color: #333;
+    position: relative;
+    top: -40px;      
+    left: -60px;     
+}
+
+.servicos h2 {
+    font-size: 18px;
+    color: #666;
+    margin-top: 5px;
+    position: relative;
+    top: -45px;      
+    left: -60px;     
+}
+
+
+.servicos-lista ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.servicos-lista li {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    margin: 10px 0;
+    color: #333;
+}
+
+.servicos-lista input[type="checkbox"] {
+    margin-right: 10px; 
+    
+}
+
+.servicos-lista span {
+    color: #333;
+    font-weight: bold;
+    margin-left: auto; 
+    padding-left: 20px; 
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 100px;
+    top: 100px;
+    position: relative;
+    ;
+}
+
+.butoes, .voltar, .botoes .proximo {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    background-color: #CD722B;
+}
+
+.botoes .voltar:hover, .botoes .proximo:hover {
+    background-color: #CD722B;
+}

@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url("imagens/tela de fundo.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo-esquerda {
+  width: 150px;
+}
+
+.logo-direita {
+  width: 150px;
+  height: 100px
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.botoes-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  width: 320px;
+  height: 57px;
+  background-color: #014A8E;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  margin: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0041a1;
+}
+
+/* Estilo para o botão de "Outros Serviços" */
+.outros-servicos-container {
+  margin-top: 50px;
+}
+
+.outros-servicos {
+  width: 320px;
+  height: 57px;
+  background-color: #014A8E;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.outros-servicos:hover {
+  background-color: #0041a1;
+}
+
+.voltar {
+  background-color: #ff8c66;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.voltar:hover {
+  background-color: #e67350;
+}

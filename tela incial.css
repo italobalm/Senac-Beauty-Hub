@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+
+.logo-beauty-hub {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 2; 
+}
+
+.logo-beauty-hub img {
+  width: 200px; 
+  height: auto;
+}
+
+
+.girls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1; 
+}
+
+.girls img {
+  max-width: 700px; 
+  height: auto;
+}
+
+
+.senac-logo {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  z-index: 2; 
+}
+
+.senac-logo img {
+  width: 150px; 
+  height: auto;
+  
+}
+
+
+  
+
+body {
+  background-image: url("imagens/tela de fundo.png")
+}
+
+h1{position: absolute; /* Impede o texto de interferir nas imagens */
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%); /* Centraliza o texto na página */
+  z-index: 3; /* Texto acima de todos os outros elementos */
+  font-size: 55px;
+  text-align: right
+  color, black;
+  padding-right: 0%;
+}
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  position: relative; /* Para que os filhos com position absolute se posicionem em relação a este elemento */
+}
+
+.button-container {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: rows; /* Alinha os botões e o link em uma coluna */
+  align-items: center;
+  gap: 20px; /* Espaço entre os botões e o link */
+}
+
+.button {
+  background-color: #FF7A00; /* Cor laranja para o botão agendar */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: 'Commissioner', sans-serif;
+}
+
+.button.conta {
+  background-color: white; /* Botão com fundo branco */
+  color: #FF7A00; /* Texto laranja */
+  border: 2px solid #FF7A00; /* Borda laranja */
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+/* Estilizando o link "ou cadastre-se" */
+.cadastre-se {
+  text-decoration: none;
+  color: #FF7A00;
+  font-size: 16px;
+  margin-top: 5px; /* Espaço entre o botão "Acessar minha conta" e o link */
+}
+
+.cadastre-se:hover {
+  text-decoration: underline;
+}
+.button-with-link{
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre o botão e o link */
+}

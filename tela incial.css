@@ -37,6 +37,7 @@ body {
   bottom: 0;
   left: 0;
   z-index: 1; 
+  padding-left: 0 !important;
 }
 
 .girls img {
@@ -96,11 +97,6 @@ h1 {
   width: 200px; /* Definindo uma largura fixa para todos os botões */
 }
 
-.button.conta {
-  background-color: white; /* Botão com fundo branco */
-  color: #FF7A00; /* Texto laranja */
-  border: 2px solid #FF7A00; /* Borda laranja */
-}
 
 .button:hover {
   opacity: 0.9;
@@ -125,4 +121,21 @@ h1 {
 h1 {
   text-align: left;
   font-size: 33px !important;
+}
+
+.posicao {
+  height: 60px;
+  width: auto;
+
+
+}
+
+.posicao2{
+  height: 70px;
+}
+.button.conta {
+  background-color: white; /* Botão com fundo branco */
+  color: #FF7A00; /* Texto laranja */
+  border: 2px solid #FF7A00; /* Borda laranja */
+  margin-bottom: 10px !important; /* Adiciona um espaçamento abaixo do botão */
 }

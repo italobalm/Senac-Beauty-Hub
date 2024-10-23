@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset básico */
 * {
     margin: 0;
@@ -157,3 +158,164 @@ h1 {
 .register a:hover {
     text-decoration: underline;
 }
+=======
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Commissioner', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url("imagens/tela de fundo.png"); /* Tela de fundo */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Estilo do logo SENAC Beauty Hub */
+.logo-beauty-hub {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: 2; 
+}
+
+.logo-beauty-hub img {
+    width: 140px; 
+    height: auto;
+}
+
+/* Estilo da imagem das mulheres */
+.girls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+.girls img {
+    max-width: 600px; 
+    height: auto;
+}
+
+/* Estilo do logo SENAC */
+.senac-logo {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 2; 
+}
+
+.senac-logo img {
+    width: 110px; 
+    height: auto;
+}
+
+
+/* Contêiner do formulário de login */
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 75%; /* Move o formulário mais para a direita */
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+}
+
+/* Título do formulário de login */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os campos de input */
+.input-container {
+    margin-bottom: 20px;
+    text-align: left;
+    
+}
+
+.input-container label {
+    font-size: 14px;
+    color: #0c0c0c;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    background-color: #EFEFEF;
+}
+
+/* Estilo para a opção de esqueci minha senha */
+.forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    font-size: 14px;
+    color: #ff7f50;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Botão de login */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #ff5733;
+}
+
+/* Estilo para a seção de cadastro */
+.register {
+    margin-top: 20px;
+}
+
+.register p {
+    font-size: 14px;
+    color: #333;
+}
+
+.register a {
+    font-size: 14px;
+    color: #ff5733;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+>>>>>>> 2b1ff6bc7c62fdc188961842b1fa1bc31e6ad7c8

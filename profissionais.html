@@ -5,6 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selecione um Profissional</title>
     <link rel="stylesheet" href="profissionais.css">
+    <style>
+        /* Estilizando a área dos botões */
+        .botoes {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 40px; /* Adiciona espaçamento entre os botões e a borda inferior da tela */
+        }
+
+        .botoes button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #014A8E;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .botoes button:hover {
+            background-color: #013766;
+        }
+
+        /* Espaçamento entre as seções */
+        .container {
+            padding-top: 100px; /* Distancia o conteúdo das logos */
+        }
+
+        /* Estilo para o título */
+        h1 {
+            margin-top: 20px;
+            font-size: 24px;
+            text-align: center;
+            color: black; /* Cor original do título */
+        }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 20px;
+            text-align: center;
+            color: black; /* Cor original do subtítulo */
+        }
+
+        /* Estilo da lista de profissionais */
+        .lista-profissionais {
+            margin-top: 30px; /* Aumenta o espaço entre o título e a lista */
+        }
+
+        .lista-profissionais label {
+            display: block; /* Faz com que cada label ocupe uma linha */
+            margin: 10px 0; /* Adiciona espaço entre os rótulos */
+            font-size: 18px;
+        }
+
+        .Atendimento {
+            margin-top: 40px; /* Espaçamento maior acima da mensagem */
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .feedbacks {
+            margin-top: 30px;
+        }
+
+        .feedback {
+            margin: 20px 0; /* Adiciona espaço entre os feedbacks */
+        }
+
+        /* Centralizando conteúdo no mobile */
+        @media (max-width: 600px) {
+            .botoes {
+                flex-direction: column;
+            }
+            .proximo, .voltar {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -17,7 +99,7 @@
 
         <section class="profissionais">
             <h1>PROFISSIONAIS</h1>
-            <h2 style="color: #014A8E;">Selecione um profissional</h2>
+            <h2>Selecione um profissional</h2>
 
             <div class="lista-profissionais">
                 <label>
@@ -62,8 +144,8 @@
         </section>
 
         <div class="botoes">
-            <button class="voltar">Voltar</button>
-            <button class="proximo">Próximo</button>
+            <button class="voltar" onclick="window.location.href='horarios.html'">Voltar</button>
+            <button class="proximo" onclick="window.location.href='agendamentos.html'">Próximo</button>
         </div>
     </div>
 </body>

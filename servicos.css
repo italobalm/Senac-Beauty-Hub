@@ -23,52 +23,45 @@ body, html {
 
 .logo-sb {
     position: absolute;
-    top: 0;
-    left: 20px;
+    top: 20px;
+    left: 68px;
 }
 
 .logo-senac {
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 60px;
+    right: 68px;
 }
 
-.logo-sb img{
-    height: 120px;  
+.logo-sb img {
+    height: 180px;  
     width: auto;    
 }
-
 
 .logo-senac img {
-    height: 70px;  
+    height: 78px;  
     width: auto;    
 }
-
 .servicos {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     width: 60%;
     text-align: left;
 }
 
+/* Afasta o título das logos */
 .servicos h1 {
     font-size: 24px;
     color: #333;
-    position: relative;
-    top: -40px;      
-    left: -60px;     
+    margin-top: 40px; /* Adiciona espaço para afastar o título */
 }
 
 .servicos h2 {
     font-size: 18px;
     color: #666;
-    margin-top: 5px;
-    position: relative;
-    top: -45px;      
-    left: -60px;     
+    margin-top: 10px; /* Afasta o subtítulo do título */
 }
-
 
 .servicos-lista ul {
     list-style: none;
@@ -77,44 +70,42 @@ body, html {
 
 .servicos-lista li {
     display: flex;
-    justify-content: flex-start; 
-    align-items: center; 
+    justify-content: flex-start;
+    align-items: center;
     margin: 10px 0;
     color: #333;
 }
 
 .servicos-lista input[type="checkbox"] {
-    margin-right: 10px; 
-    
+    margin-right: 10px;
 }
 
 .servicos-lista span {
     color: #333;
     font-weight: bold;
-    margin-left: auto; 
-    padding-left: 20px; 
+    margin-left: auto;
+    padding-left: 20px;
 }
 
 .botoes {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin-top: 100px;
-    top: 100px;
-    position: relative;
-    ;
+    margin-top: 40px; /* Ajusta a posição dos botões */
 }
 
-.butoes, .voltar, .botoes .proximo {
-    padding: 10px 20px;
+/* Estilo dos botões */
+.botoes .voltar, .botoes .proximo {
+    padding: 8px 16px; /* Diminui o tamanho do botão */
     border: none;
     border-radius: 20px;
-    font-size: 16px;
-    color: black;
+    font-size: 14px; /* Reduz o tamanho da fonte */
+    color: white;
     cursor: pointer;
     background-color: #CD722B;
+    transition: background-color 0.3s ease;
 }
 
 .botoes .voltar:hover, .botoes .proximo:hover {
-    background-color: #CD722B;
+    background-color: #b56524; /* Muda a cor ao passar o mouse */
 }

@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento</title>
     <link rel="stylesheet" href="agendamentos.css">
+    <style>
+        /* Estilizando a área dos botões */
+        .botoes {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .botoes button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #014A8E;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .botoes button:hover {
+            background-color: #013766;
+        }
+
+        /* Centralizando conteúdo no mobile */
+        @media (max-width: 600px) {
+            .botoes {
+                flex-direction: column;
+            }
+            .proximo, .voltar {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -36,9 +72,9 @@
                 <span class="Feedback-link">Feedback</span>
             </div>
         </section>
+
         <div class="botoes">
-            <button class="voltar">Voltar</button>
-            <button class="proximo">Próximo</button>
+            <button class="voltar" onclick="window.location.href='profissionais.html'">Voltar</button>
         </div>
     </div>
 </body>

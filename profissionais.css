@@ -34,36 +34,36 @@ body, html {
 }
 
 .logo-sb img {
-    height: 180px;  
-    width: auto;    
+    height: 180px;
+    width: auto;
 }
 
 .logo-senac img {
-    height: 78px;  
-    width: auto;    
+    height: 78px;
+    width: auto;
 }
 
 .profissionais {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     width: 60%;
     text-align: left;
 }
 
+/* Ajuste de espaçamento para o título */
 .profissionais h1 {
     font-size: 24px;
     color: #333;
-    margin-left: -95px; /* Ajuste este valor para mover o título mais para a direita */
+    margin-top: 40px; /* Afasta o título das logos */
 }
 
+/* Ajuste de espaçamento para o subtítulo */
 .profissionais h2 {
     font-size: 18px;
     color: #666;
-    margin-right: 5px; /* Reduzido para aproximar os títulos */
-    margin-left: -95px; /* Ajuste este valor para mover o subtítulo mais para a direita */
+    margin-top: 10px; /* Afasta o subtítulo do título */
 }
-
 
 .lista-profissionais {
     margin: 20px 0;
@@ -76,14 +76,14 @@ body, html {
 }
 
 .selecionar-profissional {
-    margin-right: 10px; 
+    margin-right: 10px;
     cursor: pointer;
 }
 
 .Atendimento {
-    font-weight: bold; /* Define o texto como negrito */
-    color: #014A8E; /* Se quiser manter a cor azul */
-    margin: 20px 0; /* Ajuste a margem conforme necessário */
+    font-weight: bold;
+    color: #014A8E;
+    margin: 20px 0;
 }
 
 .estudante {
@@ -96,34 +96,36 @@ body, html {
 
 .feedback {
     background-color: #f0f0f0;
-    padding: 10px; /* Mantido para o conteúdo */
+    padding: 10px;
     border-radius: 8px;
-    margin: 10px auto; /* Ajuste aqui para manter os retângulos próximos */
-    max-width: 600px; /* Ajuste essa largura máxima conforme necessário */
-    width: 100%; /* Para garantir que ocupe toda a largura até o máximo */
+    margin: 10px auto;
+    max-width: 600px;
+    width: 100%;
 }
 
 .feedback + .feedback {
-    margin-top: 20px; /* Aumente a margem entre os retângulos se necessário */
+    margin-top: 20px;
 }
 
+/* Ajuste para os botões */
 .botoes {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin-top: 100px;
+    margin-top: 40px; /* Ajuste de margem superior para botões */
+    position: relative;
 }
 
 .botoes .voltar, .botoes .proximo {
-    padding: 10px 20px;
+    padding: 8px 16px; /* Ajuste de tamanho dos botões */
     border: none;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 14px; /* Ajuste de tamanho da fonte dos botões */
     color: white;
     cursor: pointer;
     background-color: #CD722B;
 }
 
 .botoes .voltar:hover, .botoes .proximo:hover {
-    background-color: #CD722B;
+    background-color: #b56524; /* Efeito hover */
 }

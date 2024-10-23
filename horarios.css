@@ -34,38 +34,34 @@ body, html {
 }
 
 .logo-sb img {
-    height: 180px;  
-    width: auto;    
+    height: 180px;
+    width: auto;
 }
 
 .logo-senac img {
-    height: 78px;  
-    width: auto;    
+    height: 78px;
+    width: auto;
 }
 
 .horarios {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     width: 60%;
     text-align: left;
 }
 
+/* Ajuste do espaçamento do título e subtítulo */
 .horarios h1 {
     font-size: 24px;
     color: #333;
-    position: relative;
-    top: -80px;      
-    left: -60px;     
+    margin-top: 40px; /* Afasta o título das logos */
 }
 
 .horarios h2 {
     font-size: 18px;
     color: #666;
-    margin-top: 5px;
-    position: relative;
-    top: -85px;      
-    left: -60px;     
+    margin-top: 10px; /* Afasta o subtítulo do título */
 }
 
 .horarios-lista ul {
@@ -76,36 +72,35 @@ body, html {
 
 .horarios-lista li {
     display: flex;
-    align-items: center; 
+    align-items: center;
     margin: 10px 0;
     color: blue;
     justify-content: center; /* Centraliza cada item da lista */
-
 }
 
 .horarios-lista input[type="checkbox"] {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .botoes {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin-top: 100px;
-    top: 100px;
+    margin-top: 40px; /* Ajuste de margem superior para botões */
     position: relative;
 }
 
+/* Estilo dos botões */
 .botoes .voltar, .botoes .proximo {
-    padding: 10px 20px;
+    padding: 8px 16px; /* Ajuste de tamanho dos botões */
     border: none;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 14px; /* Ajuste de tamanho da fonte dos botões */
     color: white;
     cursor: pointer;
     background-color: #CD722B;
 }
 
 .botoes .voltar:hover, .botoes .proximo:hover {
-    background-color: #CD722B;
+    background-color: #b56524; /* Efeito hover */
 }

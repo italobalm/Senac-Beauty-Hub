@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENAC Beauty Hub</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo do SENAC Beauty Hub -->
+        <div class="logo-beauty-hub">
+            <img src="imagens/logo senac beauty.png" alt="Senac Beauty Hub Logo">
+        </div>
+
+        <!-- Logo do SENAC -->
+        <div class="senac-logo">
+            <img src="imagens/logo senac.png" alt="Logo Senac">
+        </div>
+    </div>
+    <div class="cadastro-container">
+        <h1>Realizar seu cadastro</h1>
+        <form>
+            <div class="input-container">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+            </div>
+
+            <div class="input-container">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
+            </div>
+
+            <div class="input-container">
+                <label for="data-nascimento">Data de Nascimento</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required>
+            </div>
+
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-container">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Senha" required>
+            </div>
+
+            <div class="input-container">
+                <label for="confirm-password">Confirmar Senha</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmar Senha" required>
+            </div>
+
+            <div class="button-container">
+                <button class="voltar-btn" onclick="window.location.href='index.html'">Voltar</button>                <button type="submit" class="finalizar-btn">Finalizar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
